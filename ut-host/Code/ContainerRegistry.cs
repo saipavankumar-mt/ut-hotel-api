@@ -20,6 +20,8 @@ namespace ut_host.Code
             services.AddTransient<ExceptionHandler, ExceptionHandler>();
 
             services.AddTransient<IUserAuthService, UserAuthService.UserAuthService>();
+            services.AddTransient<IHotelService, HotelService.HotelService>();
+            services.AddTransient<IHotelIMService, HotelIMService.HotelIMService>();
 
             services.AddTransient<IDataService, SQLLiteDBProvider.Services.SQLiteDataService>();
             services.AddTransient<ISessionProvider, SQLLiteDBProvider.Providers.SessionProvider>();

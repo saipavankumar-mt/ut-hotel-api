@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
+    <ProjectReference Include="..\Services\HotelIMService\HotelIMService.csproj" />
+    <ProjectReference Include="..\Services\HotelService\HotelService.csproj" />
     <ProjectReference Include="..\Services\UserAuthService\UserAuthService.csproj" />
     <ProjectReference Include="..\SQLLiteDBProvider\SQLLiteDBProvider.csproj" />
   </ItemGroup>
