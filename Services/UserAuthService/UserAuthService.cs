@@ -27,8 +27,8 @@ namespace UserAuthService
 
         public async Task<SessionResponse> UserSignInAsync(SignInRequest request)
         {
-            var password = await _sessionProvider.RetrievePassword(request.UserName);
-            if (password.Equals(request.Password))
+            var passwordInfo = await _sessionProvider.RetrievePassword(request.UserName);
+            if (passwordInfo != null && passwordInfo.Password.Equals(request.Password))
             {
                 var user = await _sessionProvider.GetUserInfo(request.UserName);
 

@@ -32,7 +32,6 @@ namespace SQLLiteDBProvider
             }
             finally
             {
-                sqlite_conn.Close();
                 _readerWriterLock.ExitReadLock();
             }
 

@@ -33,7 +33,7 @@ namespace SQLLiteDBProvider.Providers
 
         public async Task<UserInfo> GetUserInfo(string userName)
         {
-            var sqlCmd = string.Format("Select * From {0} where uname={1}", _dBSettings.TableNames.UserTable, userName);
+            var sqlCmd = string.Format("Select * From {0} where uname = '{1}'", _dBSettings.TableNames.UserTable, userName);
 
             var result = await _dataService.GetData<UserModel>(_dBSettings.DatabaseLocation.UsersDatabase, sqlCmd);
 
@@ -44,7 +44,7 @@ namespace SQLLiteDBProvider.Providers
 
         public async Task<SessionInfo> GetSessionInfo(string key)
         {
-            var sqlCmd = string.Format("Select * From {0} where key={1}", _dBSettings.TableNames.SessionTable, key);
+            var sqlCmd = string.Format("Select * From {0} where key='{1}'", _dBSettings.TableNames.SessionTable, key);
             var result = await _dataService.GetData<SessionModel>(_dBSettings.DatabaseLocation.UsersDatabase, sqlCmd);
 
             return result?.FirstOrDefault().ToCoreModel();
@@ -52,7 +52,7 @@ namespace SQLLiteDBProvider.Providers
 
         public async Task<PasswordInfo> RetrievePassword(string userName)
         {
-            var sqlCmd = string.Format("Select * From {0} where uname={1}", _dBSettings.TableNames.PasswordRegistryTable, userName);
+            var sqlCmd = string.Format("Select * From {0} where uname='{1}'", _dBSettings.TableNames.PasswordRegistryTable, userName);
 
             var result = await _dataService.GetData<PasswordModel>(_dBSettings.DatabaseLocation.UsersDatabase, sqlCmd);
 

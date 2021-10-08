@@ -25,7 +25,7 @@ namespace ut_host.Code
         {
             var apiSessionId = string.Empty;
 
-            if (context.Request.Path.Value.ToLower().Contains("login") || context.Request.Path.Value.ToLower().Contains("swagger"))
+            if (context.Request.Path.Value.ToLower().Contains("signin") || context.Request.Path.Value.ToLower().Contains("swagger"))
             {
                 await next(context);
             }
