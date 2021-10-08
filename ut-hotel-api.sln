@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{23
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserAuthService", "Services\UserAuthService\UserAuthService.csproj", "{A3287259-FB39-47F5-A1F1-443E7E4FAC23}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{BD4C4E0F-EFA4-4768-A8C6-DCC0A0518453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLLiteDBProvider", "SQLLiteDBProvider\SQLLiteDBProvider.csproj", "{A2144F8F-8CAE-49B6-9789-142AA58AD07F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +33,17 @@ Global
 		{A3287259-FB39-47F5-A1F1-443E7E4FAC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3287259-FB39-47F5-A1F1-443E7E4FAC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3287259-FB39-47F5-A1F1-443E7E4FAC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2144F8F-8CAE-49B6-9789-142AA58AD07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2144F8F-8CAE-49B6-9789-142AA58AD07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2144F8F-8CAE-49B6-9789-142AA58AD07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2144F8F-8CAE-49B6-9789-142AA58AD07F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A3287259-FB39-47F5-A1F1-443E7E4FAC23} = {23184AFD-27DD-4AC1-B7D3-027A584AEE36}
+		{A2144F8F-8CAE-49B6-9789-142AA58AD07F} = {BD4C4E0F-EFA4-4768-A8C6-DCC0A0518453}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2D48144-A102-47A9-847E-E9D7DC9D0E80}

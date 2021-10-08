@@ -8,6 +8,8 @@ namespace Contracts.Interface
 {
     public interface IUserAuthService
     {
-        Task<string> UserSignInAsync(SignInRequest request);
+        Task<SessionResponse> UserSignInAsync(SignInRequest request);
+
+        Task<UserInfo> GetSessionInfoAsync(string sessionKey);
     }
 }

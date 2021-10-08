@@ -14,6 +14,7 @@ namespace ut_host
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+            //Scheduler.run
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
