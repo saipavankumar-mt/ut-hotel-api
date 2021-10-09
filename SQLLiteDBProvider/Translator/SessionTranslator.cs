@@ -47,8 +47,7 @@ namespace SQLLiteDBProvider.Translator
 
         public static string ToInsertSqlCmdParams(string key, string userName)
         {
-            var sqlCmd = "(key, uname, createdon)" +
-                   "VALUES ( '" + key + "', '" + userName + "', '" + DateTime.Now.ToString() + "')";
+            string sqlCmd = string.Format("(key, uname, createdon) VALUES ('{0}', '{1}', '{2}')", key, userName, DateTime.Now.ToString());
 
             return sqlCmd;
         }

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data.SQLite;
+using System.IO;
+using System.Reflection;
 using System.Threading;
 
 namespace SQLLiteDBProvider
@@ -11,6 +13,10 @@ namespace SQLLiteDBProvider
 
         public SQLiteClient(string databaseLocation)
         {
+            // TODO: replace with server DB file path in production
+            var outPutDirectory = Path.GetDirectoryName(Directory.GetCurrentDirectory());
+            databaseLocation = Path.Combine(outPutDirectory, databaseLocation);
+
             sqlite_conn = new SQLiteConnection($"Data Source={databaseLocation}; Version = 3; New = True; Compress = True; ");
         }
 
