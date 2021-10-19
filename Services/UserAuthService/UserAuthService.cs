@@ -47,7 +47,7 @@ namespace UserAuthService
                 }
             }
 
-            return null;
+            throw new Exception("Incorrect username or password");
         }
     }
 }

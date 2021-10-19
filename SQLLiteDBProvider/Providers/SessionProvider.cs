@@ -56,7 +56,7 @@ namespace SQLLiteDBProvider.Providers
 
             var result = await _dataService.GetData<PasswordModel>(_dBSettings.DatabaseLocation.UsersDatabase, sqlCmd);
 
-            return result?.FirstOrDefault().ToCoreModel();
+            return result?.FirstOrDefault()?.ToCoreModel();
         }
 
     }
