@@ -1,0 +1,121 @@
+---- ut-core- requirement ---
+
+Uttrakand - 15 -20 cities
+4 category of hotels - 1 to 4star
+1 catchegory - 1 city - 2 or 3 hotels
+
+Rishikesh - 4 stars - 4 to 5 hotels
+Kedarnath - 4 stars - 0
+
+Inventory - 200 hotels
+
+Type of users
+Hotel
+Partners / transporter - loginId - Inventory add karega with thier rate what to publish
+
+Agents - 500 to 1000
+
+
+Special rate - 3000 Purchase price + 200 profit - > Final 
+
+Customer - open website
+Hotel check kiya - 4000
+
+Inventory - Add - Hotel or Raj
+
+Travel Agent / Customer will purchase
+
+Signup form for Agents - validate him - Login Id
+
+Invnetory dashbord - recents, activity, tours, booking 
+
+part -2 Enhancements - Meals, Facilities, 
+
+Variable price - 
+
+Email + SMS - for customer, hotel, and us
+
+Payment - pay 35% or 100%
+
+4000 rs - 3500 rs hotel + 500 rs Raj
+
+35% - booking confirmation - 70k 5k, 65K hotel ki paas
+
+Cancellation policy - 30 days before - 100% Refund
+
+UtHoliday - 70K refund to him - ( 65k hotel )
+
+Nov - 1cr - 50Lakh - 
+
+---- ut-model-plan---
+
+Hotel API
+
+1. Create hoteldb
+2. tables : hotel-info (hid, hname, starrating, reviewrating, reviewcount, location, city, state, country, haddress, 
+
+AddHotelToInventory 
+GetHotelDescById
+
+SearchHotels - > Hotels (List<HotelInfo>)
+
+HotelInfo 
+HotelId
+Name
+checkin
+checkout
+RoomsCount - 1
+NightCount
+Adult
+Child
+StarRating
+ReviewRating
+ReviewCount
+BasePrice
+Location
+City
+State
+Country
+HotelAddress
+HotelHeroImage
+HotelImages: List<string>
+HotelDesc:
+HotelType:	
+
+getrooms - RoomsApi hotelId
+AvailableRooms: List<RoomInfo>
+RoomInfo
+CategoryId: 01 (category)
+CategoryName: 
+facilities : List<string>
+CategoryOptions : List<string>
+DiscPrice : 2700
+BasePrice : 3000
+Availability : 04
+Capacity
+Images
+
+getprice
+[{
+  category: 01
+  Count : 02
+},
+{ 
+ category: 02
+ count: 04
+}]
+
+Response PriceSummary
+Total Price:
+Dicount
+
+
+hotel-db
+1. hotels
+2. roomcategorys
+
+hotel-room-inventory-2022
+
+
+01|10|2000:
+
